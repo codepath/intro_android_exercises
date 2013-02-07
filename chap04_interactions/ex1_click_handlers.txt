@@ -1,5 +1,4 @@
 Open HelloWorldDemo in Eclipse
-Add a button to HelloWorld and use XML to configure the onClick handler.
+Add a button to HelloWorld and use XML to configure the onClick handler to execute an empty method.
 Add another button to HelloWorld below the first button and set the
-onClick handler in the onCreate
-method.
+onClick handler in the onCreate method to a second empty method.
