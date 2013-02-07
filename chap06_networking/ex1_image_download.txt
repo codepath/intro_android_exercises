@@ -1,0 +1,3 @@
+Open HelloWorldDemo in Eclipse
+Add an ImageView
+Find an image online, download it using an InputStream, and update the ImageView.

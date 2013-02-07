@@ -1,0 +1,2 @@
+Open HelloWorldDemo in Eclipse
+Create an async task that counts to a hundred million in the background and displays a Toast when it's done counting.

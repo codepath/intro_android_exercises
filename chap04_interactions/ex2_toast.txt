@@ -1,0 +1,2 @@
+Open HelloWorldDemo in Eclipse
+In one of the button onClick handlers, show a Toast.

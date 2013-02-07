@@ -1,0 +1,3 @@
+Open HelloWorldDemo in Eclipse
+Open res/layout/activity_hello_world.xml
+Replace android:text values with references to strings defined in strings.xml

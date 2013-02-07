@@ -1,0 +1,3 @@
+Open HelloWorldDemo in Eclipse
+Change Layout from RelativeLayout to LinearLayout
+Add Orientation Horizontal

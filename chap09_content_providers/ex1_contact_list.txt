@@ -1,0 +1,3 @@
+Open HelloWorldDemo in Eclipse
+Display all contacts in a ListView
+Upon clicking on an item, display a Toast with the contact name.

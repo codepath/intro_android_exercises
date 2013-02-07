@@ -1,0 +1,3 @@
+Open HelloWorldDemo in Eclipse
+Open res/layout/activity_hello_world.xml
+Switch textSize larger

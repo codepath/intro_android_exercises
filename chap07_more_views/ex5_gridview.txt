@@ -1,0 +1,3 @@
+Create a GridView to display 10 images
+Select 10 images to move into drawables
+Construct a GridView displaying all images using a custom ArrayAdapter getView.

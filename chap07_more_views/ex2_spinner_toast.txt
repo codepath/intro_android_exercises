@@ -1,0 +1,6 @@
+Open HelloWorldDemo in Eclipse
+Create a string-array xml list of values
+Create a spinner control in XML layout
+Display string-array in spinner with adapter
+Add a submit button to the activity.
+Toast the value selected in the spinner when button is clicked.

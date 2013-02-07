@@ -1,0 +1,6 @@
+Open HelloWorldDemo in Eclipse
+Add an EditText input field to an activity
+Add a Button to an activity
+Add an ImageView to an activity
+Add an ImageButton to an activity
+Add padding between them

@@ -1,0 +1,4 @@
+Open HelloWorldDemo in Eclipse
+Set a TextView background and textColor
+Set a TextView as layout_centerHorizontal
+Add an id to a TextView, and Log.d the text of the view within the activity onCreate using findById.

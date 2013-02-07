@@ -1,0 +1,4 @@
+Open HelloWorldDemo in Eclipse
+Open AndroidManifest.xml
+Create New Activity
+Move the IntentFilter

@@ -1,0 +1,2 @@
+Open HelloWorldDemo in Eclipse
+Change Layout width and height to match_parent and then both wrap_content

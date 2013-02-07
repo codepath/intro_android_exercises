@@ -1,0 +1,5 @@
+Open HelloWorldDemo in Eclipse
+Create a second activity if one doesn't exist
+Use an explicit intent to open the activity within the first activity onCreate
+Pass a string in intent for the second activity
+Display that string value in a TextView within the second activity

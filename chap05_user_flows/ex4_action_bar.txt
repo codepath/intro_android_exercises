@@ -1,0 +1,4 @@
+Build an action bar with 2 icons
+First icon when clicked should print a toast message
+Second icon when clicked should bring up a second activity
+Home icon when clicked should take you to first activity using case android.R.id.home:

@@ -1,0 +1,3 @@
+Open HelloWorldDemo in Eclipse
+Open src/codepath/HelloWorldActivity.java
+Add a Log.d call to OnCreate, OnPause, and onResume

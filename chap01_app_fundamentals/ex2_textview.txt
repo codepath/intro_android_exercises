@@ -1,0 +1,4 @@
+Open HelloWorldDemo in Eclipse
+Open res/layout/activity_hello_world.xml
+Copy and paste new TextView into XML
+Change android:text value

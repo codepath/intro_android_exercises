@@ -1,0 +1,5 @@
+Open HelloWorldDemo in Eclipse
+Open AndroidManifest.xml
+Change the version code and name to 2 and 2.0
+Change the application icon
+Change the application name

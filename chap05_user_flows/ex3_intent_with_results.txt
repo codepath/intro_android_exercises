@@ -1,0 +1,3 @@
+Open HelloWorldDemo in Eclipse
+When a button is clicked, have the user pick a contact by using startActivityforResult
+Once the contact is chosen, show the contact's name in a TextView in the activity.
