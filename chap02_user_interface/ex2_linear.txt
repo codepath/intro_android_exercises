@@ -1,3 +1,4 @@
 Open HelloWorldDemo in Eclipse
 Change Layout from RelativeLayout to LinearLayout
-Add Orientation Horizontal
+Add Orientation Vertical Property
+Add gravity="center" to LinearLayout properties

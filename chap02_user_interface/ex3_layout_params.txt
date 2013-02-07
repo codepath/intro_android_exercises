@@ -1,2 +1,4 @@
 Open HelloWorldDemo in Eclipse
-Change Layout width and height to match_parent and then both wrap_content
+Add 2 TextViews to linear layout activity
+First TextView, Change Layout width to wrap_content
+Second TextView, Change Layout width to match_parent
