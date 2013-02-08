@@ -1,14 +1,28 @@
-Open HelloWorldDemo in Eclipse
-Set a TextView as
-  android:background="#06327a"
-  android:textColor="#cbd9f0"
-  android:padding="15dp"
-  android:layout_margin="10dp"
-  android:layout_centerHorizontal="true"
-  android:layout_centerVertical="false"
+Goal: Explore view attributes and getting a handle to the view from Java.
 
-Add an id to the TextView, and Log.d the text of the view (using getText)
-within the activity onCreate using findById.
+Description:
+Views have many different properties to configure their appearance and behavior. In this exercise, we will experiment will a few basic properties, such as setting the background color and playing with margin and padding.
+
+XML is used to describe the static aspects of an Activity. However, we will often need to manipulate or access the views in Java as well. For example, if the user enters some input in an EditText view, we need to be able to access that EditText to find out what they entered.
+
+For views that need to be accessed from Java, add a unique id label, using @+id/some_id. ONLY assign an id to views that need to be accessed from Java.
+
+Directions:
+
+1) Open the layout XML.
+2) Set the properties of a TextView
+  a) android:background="#06327a"
+  b) android:textColor="#cbd9f0"
+  c) android:padding="15dp"
+  d) android:layout_margin="10dp"
+  e) android:layout_centerHorizontal="true"
+  f) android:layout_centerVertical="false"
+3) Add a unique id to the TextView
+  a) android:id = "@+id/main_text_view"
+4) In the activity's Java file
+  a) Get a handle to the TextView, as shown in the snippet below
+  b) Hover your mouse over TextView and Toast and click the option to automatically import packages.
+
 
 ## Snippets
 

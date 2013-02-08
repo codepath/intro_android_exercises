@@ -1,8 +1,24 @@
-Open HelloWorldDemo in Eclipse
-Build an array of strings of a given topic
-Construct an ArrayAdapter for displaying
-Display the items into a ListView
-Customize the TextView used for displaying
+Goal: Explore a simple ListView.
+
+Description:
+Aside from the basic views, the ListView is the most common view when developing Android applications. If you think about the apps that you use, like Mail, Facebook, Twitter, Instagram, etc, so many views involve scrolling a list of custom views.
+
+ListViews work in two parts: an adapter that provides access to an array of data, and a custom view template to style each individual item.
+
+Android provides a simple default view template that is just a simple TextView, which is shown in the snippet below and referenced using R.layout.simple_list_view_item. This is fine for testing, but in the future we will use our own custom template.
+
+Directions:
+
+1) Create a new activity and set it to be the default launch activity.
+2) In the layout XML
+  a) Add a ListView, setting the width and height to be match_parent.
+3) In the activity's Java file
+  a) Modify the onCreate method
+    i) Define an array of data
+    ii) Create an adapter, specifiying the view template and the data array.
+    iii) Attach the adapter to the ListView
+4) Run the application
+
 
 ## Snippets
 

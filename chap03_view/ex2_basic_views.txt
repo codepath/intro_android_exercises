@@ -1,10 +1,18 @@
-Open HelloWorldDemo in Eclipse
-Change layout to LinearLayout (vertical)
-Add an EditText input field to an activity
-Add a Button to an activity
-Add an ImageView to an activity
-Add an ImageButton to an activity
-Add layout_margin between each view
+Goal: Explore the basic views of an Android application.
+
+Description:
+While an Android application has many complex views, most complex views are comprised of the basic views, TextView, EditText, Button, ImageView, and ImageButton.
+
+Directions:
+
+1) Open the layout XML.
+2) Ensure that the root layout is a vertical LinearLayout.
+3) Add an EditText input field.
+4) Add a Button.
+5) Add an ImageView.
+6) Add an ImageButton
+7) Set the android:layout_margin property to 20dp to create some space between the elements.
+
 
 ## Snippets
 
