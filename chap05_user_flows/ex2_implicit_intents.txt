@@ -2,3 +2,6 @@ Open HelloWorldDemo in Eclipse
 In the first activity, setup a TextEdit to specify a url address to visit.
 Create a "Visit" button that when clicked opens up the specified url
   in a browser using an ACTION_VIEW implicit intent
+
+
+## Snippets

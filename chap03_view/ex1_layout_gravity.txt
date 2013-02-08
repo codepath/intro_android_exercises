@@ -3,3 +3,5 @@ Add three TextView controls in a vertical LinearLayout
 Add 30dp of padding between the views
 The second TextView should have layoutGravity set to "center"
 The third TextView should have layoutGravity set to "right".
+
+## Snippets

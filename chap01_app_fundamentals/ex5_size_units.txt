@@ -1,3 +1,12 @@
 Open HelloWorldDemo in Eclipse
 Open res/layout/activity_hello_world.xml
 Switch textSize larger
+
+## Snippets
+
+<TextView
+    android:textSize="20sp"
+    android:text="@string/second_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+ />

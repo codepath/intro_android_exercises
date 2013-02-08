@@ -2,3 +2,11 @@ Open HelloWorldDemo in Eclipse
 Open res/layout/activity_hello_world.xml
 Copy and paste new TextView into XML
 Change android:text value
+
+## Snippets
+
+<TextView
+    android:text="Some New Text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+/>

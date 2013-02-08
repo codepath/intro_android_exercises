@@ -2,3 +2,5 @@ Open HelloWorldDemo in Eclipse
 Create a TimePicker control
 Create a Submit button
 Toast the selected time when button is pressed.
+
+## Snippets

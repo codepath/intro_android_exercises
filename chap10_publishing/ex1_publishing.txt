@@ -1,3 +1,5 @@
 Open HelloWorldDemo in Eclipse
 Go through the process of signing your application and generating an APK through Eclipse
 (Optionally) Publish an application on the Android Marketplace
+
+## Snippets

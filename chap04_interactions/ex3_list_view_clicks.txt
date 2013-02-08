@@ -2,3 +2,5 @@ Open HelloWorldDemo in Eclipse
 Create a ListView that displays a list of countries.
 Upon clicking on a ListView,
 display a toast with the country name.
+
+## Snippets

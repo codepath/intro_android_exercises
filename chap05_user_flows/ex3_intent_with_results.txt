@@ -4,3 +4,5 @@ Create or open a new activity
 When a button is clicked, have another activity started using startActivityforResult
 In the second activity, have the user enter text and hit a button and return the text as a result
 In the first activity, display the text result as a toast message
+
+## Snippets

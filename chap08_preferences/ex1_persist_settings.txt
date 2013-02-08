@@ -3,3 +3,5 @@ Create an EditText and CheckBox
 Add a Submit button to the activity
 When button clicked, persist the values of the inputs to SharedPreferences
 When launching the application, set the input fields based on the last persisted values.
+
+## Snippets

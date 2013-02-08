@@ -6,3 +6,5 @@ Set a TextView as
   layout_centerVertical="false"
 Add an id to the TextView, and Log.d the text of the view
 within the activity onCreate using findById.
+
+## Snippets

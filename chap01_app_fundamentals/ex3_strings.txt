@@ -1,3 +1,11 @@
 Open HelloWorldDemo in Eclipse
 Open res/layout/activity_hello_world.xml
 Replace android:text values with references to strings defined in strings.xml
+
+## Snippets
+
+<TextView
+    android:text="@string/second_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+/>

@@ -4,3 +4,5 @@ Create a button in the first activity
 When the button is clicked, use an explicit intent to open the second activity
 Pass a string with key text in intent bundle for the second activity
 Display that string value in a TextView within the second activity
+
+## Snippets

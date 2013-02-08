@@ -3,3 +3,5 @@ Build an array of strings of a given topic
 Construct an ArrayAdapter for displaying
 Display the items into a ListView
 Customize the TextView used for displaying
+
+## Snippets

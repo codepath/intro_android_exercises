@@ -1,3 +1,21 @@
 Open HelloWorldDemo in Eclipse
 Open src/codepath/HelloWorldActivity.java
 Add a Log.d call to OnCreate, OnPause, and onResume
+
+## Snippets
+
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_basic_text_view);
+    Log.d("DEBUG", "onCreate was just called!");
+}
+
+protected void onResume() {
+   super.onResume();
+   Log.d("DEBUG", "onResume was just called!");
+}
+
+protected void onPause() {
+   super.onPause();
+   Log.d("DEBUG", "onPause was just called!");
+}

@@ -2,3 +2,6 @@ Create a GridView to display 6 images
 Select 6 images to move into drawables
 Construct a GridView displaying all images using a custom class
   extends ArrayAdapter and overrides getView.
+
+
+## Snippets

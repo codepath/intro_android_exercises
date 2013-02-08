@@ -5,3 +5,5 @@ Display all contacts in a ListView
 Upon clicking on an item, display a Toast with the contact name.
 
 <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+## Snippets

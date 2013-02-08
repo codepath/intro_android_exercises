@@ -5,3 +5,5 @@ Home icon on second activity when clicked should take you back to first activity
   Hint: Use "case android.R.id.home" to handle home click
   Enable setHomeButtonEnabled on ActionBar to enable home button click
 Action Bar should read 'Click an Icon' as the title
+
+## Snippets

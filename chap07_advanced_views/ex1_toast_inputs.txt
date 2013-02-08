@@ -2,3 +2,5 @@ Open HelloWorldDemo in Eclipse
 Create an input form with at least three types of input fields.
 Add a submit button to the activity.
 Toast the values of all three input views when the button is pressed.
+
+## Snippets

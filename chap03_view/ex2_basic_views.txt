@@ -5,3 +5,5 @@ Add a Button to an activity
 Add an ImageView to an activity
 Add an ImageButton to an activity
 Add layout_margin between each view
+
+## Snippets
