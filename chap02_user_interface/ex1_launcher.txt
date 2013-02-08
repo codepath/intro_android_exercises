@@ -1,7 +1,17 @@
-Open HelloWorldDemo in Eclipse
-Open AndroidManifest.xml
-Create New Activity
-Move the IntentFilter
+Goal: Create a new activity and set it to be the default activity.
+
+Description:
+Every activity in the project must be listed in AndroidManifest.xml, in the application node. Only one of them should contain an intent filter with an action set to MAIN and a category of LAUNCHER. That activity will be the default activity.
+
+Directions:
+1) Create a new activity.
+  a) Click on File->New->Other
+  b) Select Android->Android Activity
+  c) Create a blank activity. The wizard will automatically create the activity, add it to AndroidManifest.xml, create a layout file, and create a menu file. If you want to delete an activity, you should remove the corresponding layout and menu file manually.
+2) Modify the new activity's layout file so that you can recognize it as the second activity.
+3) Modify AndroidManifest.xml to change the default activity.
+4) Run the application and confirm that it starts with the second activity.
+
 
 ## Snippets
 

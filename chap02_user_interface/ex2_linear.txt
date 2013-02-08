@@ -1,7 +1,19 @@
-Open HelloWorldDemo in Eclipse
-Change Layout from RelativeLayout to LinearLayout
-Add Orientation Vertical Property
-Add gravity="center" to LinearLayout properties
+Goal: Explore LinearLayout.
+
+Description:
+Layouts (ViewGroups) are containers for Views (e.g., TextViews, Buttons, etc) and may also contain other Layouts. Different layout types have different options for configuring how their contained Views are laid out.
+
+The easiest to use and the most common Layout type is LinearLayout. LinearLayout either lays out its contained Views in a row or a column, depending on the orientation property.
+
+Note: the gravity property specifies the alignment of the contained views (e.g., left, center, right, etc). This is different from layout_gravity, which specifies the alignment of the entire container with respect to its parent.
+
+Directions:
+
+1) Open the XML layout.
+2) Change the root layout to be a LinearLayout.
+3) Add the android:orientation property and set it to "vertical".
+4) Add the android:gravity property and set it to "center".
+
 
 ## Snippets
 
