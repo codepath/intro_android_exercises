@@ -1,6 +1,48 @@
 Open HelloWorldDemo in Eclipse
+Add line allowing UIThread long tasks
 Add an ImageView to an activity
 Find an image online, download it using an InputStream,
   and update the ImageView.
 
 ## Snippets
+
+// Manifest
+<uses-permission android:name="android.permission.INTERNET" />
+
+// In Activity
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+  // ...
+  StrictMode.setThreadPolicy(
+        new StrictMode.ThreadPolicy.Builder().permitNetwork().build());
+  downloadImageFromUri("http://...some/image/url");
+}
+
+
+private void downloadImageFromUri(String address) {
+  URL url;
+  try {
+    url = new URL(address);
+  } catch (MalformedURLException e1) {
+    url = null;
+  }
+
+  URLConnection conn;
+  InputStream in;
+  Bitmap bitmap;
+  try {
+    conn = url.openConnection();
+    conn.connect();
+    in = conn.getInputStream();
+    bitmap = BitmapFactory.decodeStream(in);
+    in.close();
+  } catch (IOException e) {
+    bitmap = null;
+  }
+
+  if (bitmap != null) {
+    ImageView img = (ImageView) findViewById(R.id.ivBasicImage);
+    img.setImageBitmap(bitmap);
+  }
+}

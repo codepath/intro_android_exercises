@@ -6,3 +6,27 @@ Add a submit button to the activity.
 Toast the value selected in the spinner when button is clicked.
 
 ## Snippets
+
+// res/values/spinner_values.xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_options">
+       <item>Red</item>
+       <item>Orange</item>
+       <item>Yellow</item>
+       <item>Green</item>
+       <item>Blue</item>
+       <item>Indigo</item>
+       <item>Violet</item>
+    </string-array>
+</resources>
+
+// In Java Activity
+private void loadSpinner() {
+  ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+    R.array.spinner_options, android.R.layout.simple_spinner_item);
+  // Set layout style during dropdown
+  adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+  // Load data from adapter
+  spinner.setAdapter(adapter);
+}

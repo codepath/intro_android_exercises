@@ -4,3 +4,19 @@ Add a submit button to the activity.
 Toast the values of all three input views when the button is pressed.
 
 ## Snippets
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+  // ...
+  etVal = (EditText) findViewById(R.id.etVal);
+  chkVal = (CheckBox) findViewById(R.id.chkVal);
+  rdgVal = (RadioGroup) findViewById(R.id.rdgVal);
+}
+
+public void toastInputs(View v) {
+  int selected = rdgVal.getCheckedRadioButtonId();
+  RadioButton b = (RadioButton) findViewById(selected);
+
+  String text = etVal.getText() + " | " + chkVal.isChecked() + " | " + b.getText();
+  Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+}

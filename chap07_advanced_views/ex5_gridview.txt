@@ -5,3 +5,29 @@ Construct a GridView displaying all images using a custom class
 
 
 ## Snippets
+
+GridView gvImages;
+GridImageAdapter adapter;
+
+protected void loadGridViewImages() {
+    gvImages = (GridView) findViewById(R.id.gvImages);
+    String[] numbers = new String[] { "ad", "ae", "af", "ag", "ai", "al"};
+    adapter = new GridImageAdapter(this,
+        android.R.layout.simple_list_item_1, numbers);
+    gvImages.setAdapter(adapter);
+}
+
+class GridImageAdapter extends ArrayAdapter<String> {
+
+  public GridImageAdapter(Context context, int textViewResourceId, String[] numbers) {
+    super(context, textViewResourceId, numbers);
+  }
+
+  public View getView(int position, View convertView, ViewGroup parent) {
+      ImageView v = new ImageView(GridViewDemoActivity.this);
+      int resId = getResources().getIdentifier(getItem(position), "drawable", getPackageName());
+      v.setImageDrawable(getResources().getDrawable(resId));
+      return v;
+  }
+
+}

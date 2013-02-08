@@ -4,3 +4,9 @@ Create a Submit button
 Toast the selected time when button is pressed.
 
 ## Snippets
+
+// Java Activity
+public void displayTime(View v) {
+  String time = tpTime.getCurrentHour() + ":" + tpTime.getCurrentMinute();
+  Toast.makeText(this, time, Toast.LENGTH_SHORT).show();
+}

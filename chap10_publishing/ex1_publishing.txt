@@ -2,4 +2,19 @@ Open HelloWorldDemo in Eclipse
 Go through the process of signing your application and generating an APK through Eclipse
 (Optionally) Publish an application on the Android Marketplace
 
-## Snippets
+Publishing requires us to self-sign our application.
+    Eclipse has a signing wizard built-in
+    Select File → Export → Android → Export Android Application
+    Verify project name and click Next
+    Select Create a new Keystore and pick any location and any password.
+    Type "DistributionKeyStoreAlias" as alias, enter 30 years of validity and name. Hit Next
+    Choose an APK file path and hit Finish
+
+Publishing can be done through several deployment methods.
+    The easiest is to use the Android Market
+    Visit http://market.android.com/publish/Home to register for a Google developer account (costs $25)
+    Enter information and complete the process
+    Click the Upload Application link to start the upload
+    Select APK file and upload screenshots and information
+    Enter app title, description, website, etc
+    Hit Publish to complete the uploading of your app.

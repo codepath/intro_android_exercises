@@ -5,3 +5,72 @@ After 100% complete display the first line of each
   response on screen in TextView.
 
 ## Snippets
+
+ProgressBar pb;
+TextView tvResult;
+ArrayList<String> lines = new ArrayList<String>();
+
+public void startFourUrlAsync(View v) {
+     new DelayTask().execute();
+}
+
+public class DelayTask extends AsyncTask<Void, Integer, String> {
+  int count = 0;
+  @Override
+  protected void onPreExecute() {
+    pb.setVisibility(ProgressBar.VISIBLE);
+  }
+
+  @Override
+  protected String doInBackground(Void... params) {
+    String res = loadUrlBody("http://google.com");
+    lines.add(res.split("\n")[0]);
+    publishProgress(25);
+    res = loadUrlBody("http://yahoo.com");
+    lines.add(res.split("\n")[0]);
+    publishProgress(50);
+    res = loadUrlBody("http://twitter.com");
+    lines.add(res.split("\n")[0]);
+    publishProgress(75);
+    res = loadUrlBody("http://facebook.com");
+    lines.add(res.split("\n")[0]);
+    publishProgress(100);
+    return "complete";
+  }
+
+  @Override
+  protected void onProgressUpdate(Integer... values) {
+     pb.setProgress(values[0]);
+  }
+
+  @Override
+  protected void onPostExecute(String result) {
+    Toast.makeText(ProgressBarActivity.this, "Completed!", Toast.LENGTH_SHORT).show();
+    tvResult.setText(lines.toString());
+  }
+
+  protected String loadUrlBody(String address) {
+    HttpClient httpclient = new DefaultHttpClient();
+    HttpResponse response = null;
+    String responseString = null;
+    try {
+      response = httpclient.execute(new HttpGet(address));
+      StatusLine statusLine = response.getStatusLine();
+        if(statusLine.getStatusCode() == HttpStatus.SC_OK){
+            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            response.getEntity().writeTo(out);
+            out.close();
+            responseString = out.toString();
+        } else{
+            response.getEntity().getContent().close();
+            throw new IOException(statusLine.getReasonPhrase());
+        }
+    } catch (ClientProtocolException e) {
+      // nothing
+    } catch (IOException e) {
+      // nothing
+    }
+    return responseString;
+  }
+
+}

@@ -4,6 +4,49 @@ Access the contacts from an activity and print all the names.
 Display all contacts in a ListView
 Upon clicking on an item, display a Toast with the contact name.
 
+## Snippets
+
+// Manifest
 <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
-## Snippets
+// Activity
+private void populateListView() {
+  ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+    android.R.layout.simple_list_item_1, names);
+
+  ListView listView = (ListView) findViewById(R.id.lvContacts);
+  listView.setAdapter(adapter);
+  listView.setOnItemClickListener(new OnItemClickListener() {
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+      Toast.makeText(ContactListActivity.this, names.get(position), Toast.LENGTH_SHORT).show();
+    }
+  });
+}
+
+@SuppressLint("NewApi")
+private void loadContacts() {
+  Uri allContacts = Uri.parse("content://contacts/people");
+  CursorLoader cursorLoader = new CursorLoader(this, allContacts,
+     null, // the columns to retrive
+     null, // the selection criteria
+     null, // the selection args
+     null // the sort order
+  );
+
+  Cursor c = cursorLoader.loadInBackground();
+  if (c.moveToFirst()) {
+    do {
+         // Get Contact ID
+      int idIndex = c.getColumnIndex(ContactsContract.Contacts._ID);
+      String contactID = c.getString(idIndex);
+
+      // Get Contact Name
+      int nameIndex = c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME);
+      String contactDisplayName = c.getString(nameIndex);
+      names.add(contactDisplayName);
+
+      Log.d("debug", contactID + ", " + contactDisplayName);
+    } while (c.moveToNext());
+  }
+}
