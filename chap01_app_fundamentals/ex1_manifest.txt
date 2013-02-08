@@ -1,8 +1,19 @@
-Open HelloWorldDemo in Eclipse
-Open AndroidManifest.xml
-Change the version code and name to 2 and 2.0
-Change the application icon
-Change the application name
+Goal: Explore the AndroidManifest file.
+
+Description:
+Every Android application has a file called AndroidManifest.xml that controls application-wide settings such as the display name, icon, theme, and default Activity.
+
+Directions:
+
+1) Open AndroidManifest.xml
+  a) Change the version code and name to 2 and 2.0. Reminder: version code is an integer value that you can programatically inspect in your application. Version name is displayed to the user.
+  b) Change the application name
+  c) Change the application icon
+    i) Find and download an image, e.g., from Google Images.
+    ii) Create various resolution sizes for your image.  Tip: Use a tool to automatically create the resolution sizes: http://android-ui-utils.googlecode.com/hg/asset-studio/dist/icons-launcher.html
+    iii) Place the various resolutions into the respective drawable folders.
+    iv) In AndroidManifest.xml, point to the new drawable.
+
 
 ## Snippets
 
