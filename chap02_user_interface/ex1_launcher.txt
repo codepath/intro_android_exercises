@@ -4,3 +4,14 @@ Create New Activity
 Move the IntentFilter
 
 ## Snippets
+
+// Android Manifest.xml
+
+<activity
+    android:name="codepath.apps.demointroandroid.SecondActivity"
+    android:label="Second Activity" >
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>

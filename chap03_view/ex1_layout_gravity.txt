@@ -1,7 +1,16 @@
 Open HelloWorldDemo in Eclipse
 Add three TextView controls in a vertical LinearLayout
-Add 30dp of padding between the views
+Add 30dp of layout_marginTop between the views
 The second TextView should have layoutGravity set to "center"
-The third TextView should have layoutGravity set to "right".
+The third TextView should have layoutGravity set to "right"
 
 ## Snippets
+
+// In activity, have three TextViews similar to below
+<TextView
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:text="Gravity Center" />
+

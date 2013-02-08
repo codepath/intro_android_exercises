@@ -4,3 +4,33 @@ Add another button to HelloWorld below the first button and set the
 onClick handler in the onCreate method to a second empty method.
 
 ## Snippets
+
+// First button with xml onClick
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:onClick="firstButtonClicked"
+    android:text="XML onClick" />
+
+
+// Java Activity
+protected void onCreate(Bundle savedInstanceState) {
+    // ...
+  Button secondButton = (Button) findViewById(R.id.btnClick2);
+  secondButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+      secondButtonClicked(v);
+    }
+  });
+}
+
+public void firstButtonClicked(View v) {
+  // ...
+}
+
+
+public void secondButtonClicked(View v) {
+  // ...
+}

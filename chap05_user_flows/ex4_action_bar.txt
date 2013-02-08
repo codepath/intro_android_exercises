@@ -7,3 +7,35 @@ Home icon on second activity when clicked should take you back to first activity
 Action Bar should read 'Click an Icon' as the title
 
 ## Snippets
+
+// res/menu/my_activity.xml
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+      android:id="@+id/menu_toast"
+      android:icon="@drawable/some_toast_icon"
+      android:showAsAction="ifRoom|withText"
+      android:title="Toast" />
+
+    <item
+      android:id="@+id/menu_launch"
+      android:icon="@drawable/some_launch_icon"
+      android:showAsAction="ifRoom|withText"
+      android:title="Second" />
+</menu>
+
+// In Java Activity
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+  switch (item.getItemId()) {
+  case R.id.menu_toast:
+    Toast.makeText(this, "Toasted", Toast.LENGTH_SHORT).show();
+    break;
+  case R.id.menu_launch:
+    Intent i = new Intent(this, SimpleBundleDemoActivity.class);
+    startActivity(i);
+    break;
+  default:
+    break;
+  }
+  return true;
+}

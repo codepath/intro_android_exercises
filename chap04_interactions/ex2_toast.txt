@@ -1,4 +1,7 @@
 Open HelloWorldDemo in Eclipse
-In one of the button onClick handlers, show a Toast.
+In both of the button onClick handler methods, show a Toast.
 
 ## Snippets
+
+// Use Toast to show message in methods
+Toast.makeText(MyActivityClass.this, "firstButton clicked via XML handler", Toast.LENGTH_SHORT);

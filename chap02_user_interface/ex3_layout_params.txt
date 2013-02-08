@@ -4,3 +4,13 @@ First TextView, Change Layout width to wrap_content
 Second TextView, Change Layout width to match_parent
 
 ## Snippets
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Wrap Content" />
+
+<TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Match Parent" />

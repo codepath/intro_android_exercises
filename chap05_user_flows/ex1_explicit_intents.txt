@@ -6,3 +6,19 @@ Pass a string with key text in intent bundle for the second activity
 Display that string value in a TextView within the second activity
 
 ## Snippets
+
+// In Activity
+Button btnLaunchSecond = (Button) findViewById(R.id.btnLaunchSecond);
+btnLaunchSecond.setOnClickListener(new OnClickListener() {
+  @Override
+  public void onClick(View v) {
+    Intent i = new Intent(ExplicitIntentActivity.this, SimpleBundleDemoActivity.class);
+    i.putExtra("text", "Passed String Extra!");
+    startActivity(i);
+  }
+});
+
+// In Launched Activity
+String initialText = getIntent().getStringExtra("text");
+TextView tvDisplayText = (TextView) findViewById(R.id.tvDisplayText);
+tvDisplayText.setText(initialText);

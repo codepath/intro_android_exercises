@@ -1,10 +1,20 @@
 Open HelloWorldDemo in Eclipse
-Set a TextView background and textColor
 Set a TextView as
-  layout_margin="10dp"
-  layout_centerHorizontal="true"
-  layout_centerVertical="false"
-Add an id to the TextView, and Log.d the text of the view
+  android:background="#06327a"
+  android:textColor="#cbd9f0"
+  android:padding="15dp"
+  android:layout_margin="10dp"
+  android:layout_centerHorizontal="true"
+  android:layout_centerVertical="false"
+
+Add an id to the TextView, and Log.d the text of the view (using getText)
 within the activity onCreate using findById.
 
 ## Snippets
+
+// Java code in Activity
+protected void onCreate(Bundle savedInstanceState) {
+  // ...
+  TextView tvMain = (TextView) findViewById(R.id.tvMain);
+  Toast.makeText(this, tvMain.getText().toString(), Toast.LENGTH_SHORT).show();
+}

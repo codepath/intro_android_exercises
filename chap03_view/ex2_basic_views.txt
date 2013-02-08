@@ -1,5 +1,5 @@
 Open HelloWorldDemo in Eclipse
-Change to linear vertical layout
+Change layout to LinearLayout (vertical)
 Add an EditText input field to an activity
 Add a Button to an activity
 Add an ImageView to an activity
@@ -7,3 +7,6 @@ Add an ImageButton to an activity
 Add layout_margin between each view
 
 ## Snippets
+
+// Hint: Switch to Graphical Layout and
+// drag the inputs from the left-hand palette
