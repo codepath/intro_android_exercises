@@ -1,7 +1,17 @@
-Open HelloWorldDemo in Eclipse
-Open res/layout/activity_hello_world.xml
-Copy and paste new TextView into XML
-Change android:text value
+Goal: Explore the XML layout of an Activity.
+
+Description:
+Every activity has an associated XML layout file specified in the onCreate method. The XML file is responsible for describing the elements (TextViews, Buttons, etc) that will be on the screen for that activity.
+
+Every element has XML properties that describes various behavior such as layout, alignment, color, etc.
+
+Directions:
+
+1) Open the XML layout file (e.g., res/layout/activity_hello_world.xml)
+2) Switch to the raw XML mode.
+3) If there is not already a TextView in the layout, add one.
+4) Modify the android:text property, as shown below.
+
 
 ## Snippets
 

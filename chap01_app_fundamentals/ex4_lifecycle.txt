@@ -1,6 +1,18 @@
-Open HelloWorldDemo in Eclipse
-Open src/codepath/HelloWorldActivity.java
-Add a Log.d call to OnCreate, OnPause, and onResume
+Goal: Explore the Activity lifecycle.
+
+Description:
+The Activity lifecycle is automatically managed by the Android framework. If a user taps on something that switches them into a new activity, the previous activity is paused. The activity is also paused if the user receives a phone call.
+
+The 3 most commonly implemented activity lifecycle methods are onCreate, onPause, and onResume. Note: if you implement an activity lifecycle method, you MUST call the super implementation.
+
+Directions:
+1) Open the Activity java file (e.g., src/codepath/HelloWorldActivity.java)
+2) Implement the onCreate, onPause, and onResume methods.
+3) In each method, call the super method.
+4) Add a Log.d message to each method, as shown below.
+5) Run the application and observe the LogCat.
+  a) In the emulator, click the Home button.  Did you see the activity pause in the LogCat?
+
 
 ## Snippets
 
