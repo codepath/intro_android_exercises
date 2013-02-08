@@ -1,3 +1,6 @@
 Open HelloWorldDemo in Eclipse
-When a button is clicked, have the user pick a contact by using startActivityforResult
-Once the contact is chosen, show the contact's name in a TextView in the activity.
+Create at least one contact within the emulator or device
+Create or open a new activity
+When a button is clicked, have another activity started using startActivityforResult
+In the second activity, have the user enter text and hit a button and return the text as a result
+In the first activity, display the text result as a toast message

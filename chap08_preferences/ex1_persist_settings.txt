@@ -1,5 +1,5 @@
 Open HelloWorldDemo in Eclipse
 Create an EditText and CheckBox
 Add a Submit button to the activity
-When clicked, persist the values of the inputs to SharedPreferences
-When launching the application, set the input fields with the last persisted values.
+When button clicked, persist the values of the inputs to SharedPreferences
+When launching the application, set the input fields based on the last persisted values.

@@ -1,4 +1,4 @@
 Open HelloWorldDemo in Eclipse
 Download the same image that you downloaded before using AsyncHttpClient.
-Display a toast when the
-download completes.
+Display a toast when the download completes.
+Hint: Use AsyncHttpClient with a BinaryHttpResponseHandler

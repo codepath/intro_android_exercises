@@ -1,3 +1,5 @@
-Create a ProgressBar, TextView and Submit button on screen
-When you click submit, execute an AsyncTask that hits 4 URLs and reports progress 25% to bar after each response
-After 100% complete display the first line of each response on screen.
+Create a ProgressBar (horizontal), TextView and Submit button on screen
+When you click submit, execute an AsyncTask that hits 4 URLs
+  and reports progress 25% to bar after each response
+After 100% complete display the first line of each
+  response on screen in TextView.

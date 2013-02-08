@@ -1,3 +1,7 @@
 Open HelloWorldDemo in Eclipse
+In the emulator, add three contacts to the address book.
+Access the contacts from an activity and print all the names.
 Display all contacts in a ListView
 Upon clicking on an item, display a Toast with the contact name.
+
+<uses-permission android:name="android.permission.READ_CONTACTS"/>
