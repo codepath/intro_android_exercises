@@ -1,7 +1,13 @@
-Open HelloWorldDemo in Eclipse
-In both of the button onClick handler methods, show a Toast.
+Goal: To display a toast message.
+
+Description:
+A toast is a text view that appears in the bottom half of the screen that automatically fades away after a short delay. It is used to display transient messages.
+
+Directions:
+1) In the onClick method of a button, display a message using a Toast.
+
 
 ## Snippets
 
 // Use Toast to show message in methods
-Toast.makeText(MyActivityClass.this, "firstButton clicked via XML handler", Toast.LENGTH_SHORT);
+Toast.makeText(MyActivityClass.this, "firstButton clicked via XML handler", Toast.LENGTH_SHORT).show();

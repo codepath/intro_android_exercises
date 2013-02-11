@@ -1,7 +1,16 @@
-Open HelloWorldDemo in Eclipse
-Create a ListView that displays a list of countries.
-Upon clicking on a ListView,
-display a toast with the country name.
+Goal: Implement handling a click on a row in a ListView.
+
+Description:
+ListViews display a collection of data, which it accesses via an Adapter. Each item in the collection can be rendered in a custom view. In this exercise, we will create a simple ListView with a default view and handle clicks on a row.
+
+Directions:
+1) In a new Activity, create a ListView that fills the screen.
+2) In the onCreate method of the Activity
+  a) Create a string Array of countries.
+  b) Instantiate an array adapter with the string array and a default XML layout, android.R.layout.simple_list_item_1.
+  c) Set the adapter of the ListView to the array adapter.
+  d) Set the onItemClickListener of the ListView to display a toast upon clicking on the row. The toast should indicate which country was selected.
+
 
 ## Snippets
 
@@ -16,7 +25,6 @@ listView.setOnItemClickListener(new OnItemClickListener() {
   @Override
   public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
     String country = adapter.getItem(position);
-    SimpleAlertDialog.displayWithOK(ListViewClicksActivity.this, country);
     Toast.makeText(ListViewClicksActivity.this, country, Toast.LENGTH_SHORT).show();
   }
 
