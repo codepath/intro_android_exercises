@@ -1,8 +1,19 @@
-Open HelloWorldDemo in Eclipse
-In the emulator, add three contacts to the address book.
-Access the contacts from an activity and print all the names.
-Display all contacts in a ListView
-Upon clicking on an item, display a Toast with the contact name.
+Goal: To access the contact list on the phone.
+
+Description:
+Content providers are used when data needs to be shared between applications. Data in a content provider is represented as a collection of simple tables. In this exercise, we will access the contact list via the Contacts content provider. In order to do this, we must request the READ_CONTACTS permission in AndroidManifest.xml.
+
+Directions:
+1) Use the Contacts app in the emulator to add several contacts for debugging.
+2) Modify AndroidManifest.xml to request the READ_CONTACTS permission.
+3) Create an Activity with a full screen ListView.
+4) Create an instance variable of type ArrayList to store the contact names.
+5) Initialize the contacts
+  a) Get a cursor to the contacts table.
+  b) Iterate through the cursor, setting names into the ArrayList.
+6) Create an ArrayAdapter with the contact names ArrayList.
+7) Add an OnItemClickListener and display the selected contact in a Toast.
+
 
 ## Snippets
 

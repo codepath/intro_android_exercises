@@ -1,12 +1,25 @@
-Open HelloWorldDemo in Eclipse
-Download the same image that you downloaded before using AsyncHttpClient.
-Display a toast when the download completes.
-Hint: Use AsyncHttpClient for the request with a BinaryHttpResponseHandler
+Goal: Download an image asynchronously.
+
+Description:
+Using the built-in URLConnection class and AsyncTasks, it's possible to download images from the internet asynchronously. However, third party libraries exist to provide this functionality in a more convenient way. A popular third party library is AsyncHttpClient, which makes all its network requests asynchronously.
+
+This library uses anonymous classes to receive the desired method from the developer.
+
+Directions:
+1) Create an Activity with an ImageView.
+2) Find the URL of an image to test.
+3) In the onCreate method, call downloadImageFromUrl(String address)
+4) Implement downloadImageFromUrl(String address) like the snippet below
+
+Reference:
+
+Download the library from: http://loopj.com/android-async-http/
+
 
 ## Snippets
 
 // In Java
-private void downloadSmartImageFromUrl(String address) {
+private void downloadImageFromUrl(String address) {
   AsyncHttpClient client = new AsyncHttpClient();
   client.get(address, new
       BinaryHttpResponseHandler() {

@@ -1,8 +1,17 @@
-Create a ProgressBar (horizontal), TextView and Submit button on screen
-When you click submit, execute an AsyncTask that hits 4 URLs
-  and reports progress 25% to bar after each response
-After 100% complete display the first line of each
-  response on screen in TextView.
+Goal: Create a ProgressBar that reflects the progress of some network requests.
+
+Description:
+In this exercise, we will leverage some additional features of the AsyncTask class, notably the ability to report incremental progress. This involves calling the method publishProgress in the doInBackground() method, which triggers a call to onProgressUpdate() method. The reason it must be done like this is that UI updates may not be done in the background thread. The onProgressUpdate() method is called in the main thread.
+
+Directions:
+1) Create a new Activity with a horizontal ProgressBar, a TextView, and a Submit button.
+2) Create an ArrayList<String> to store the first line of each network response.
+3) Implement a private, inner class called DelayTask.
+  a) In onPreExecute(), show the hiddent ProgressBar.
+  b) In doInBackground, download the 4 sites and call publishProgress after each site completes its download.
+  c) In onProgressUpdate, update the ProgressBar.
+  d) In onPostExecute, update the TextView with the downloaded responses.
+
 
 ## Snippets
 

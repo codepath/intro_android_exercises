@@ -1,7 +1,14 @@
-Open HelloWorldDemo in Eclipse
-Create an input form with at least three types of input fields.
-Add a submit button to the activity.
-Toast the values of all three input views when the button is pressed.
+Goal: Experiment with three basic input views: EditText, CheckBox, and RadioGroup.
+
+Description:
+This is a basic exercise in the usage of a few common input views.
+
+Directions:
+1) Create a new Activity with an EditText, a CheckBox, and a RadioGroup.
+2) In the onCreate method, find and store each view into an instance variable.
+3) Add a button to the activity and implement a click handler.
+  a) In the click handler, display a Toast of the current values of the EditText, CheckBox, and RadioGroup.
+
 
 ## Snippets
 

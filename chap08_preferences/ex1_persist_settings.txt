@@ -1,8 +1,23 @@
-Open HelloWorldDemo in Eclipse
-Create an EditText and CheckBox
-Add a Submit button to the activity
-When button clicked, persist the values of the inputs to SharedPreferences
-When launching the application, set the input fields based on the last persisted values.
+Goal: Persist settings across application launches.
+
+Description:
+There are a variety of ways to save data, and one of the simplest ways is to leverage the built-in SharedPreferences class. SharedPreferences is simply a HashMap that saves its keys and values to disk automatically.
+
+In this exercise, we will add some values to the SharedPreferences class and retrieve them later.
+
+Directions:
+1) In a new Activity, create an EditText and CheckBox.
+2) In the onCreate method, retrieve the saved values for previous EditText and CheckBox views and configure the current EditText and CheckBox views.
+  a) Get the SharedPreferences using getSharedPreferences()
+  b) Store the SharedPreferences Editor to be used later.
+  c) Retrieve the saved values for EditText and CheckBox from the SharedPreferences using keys that you have chosen.
+3) Add a button, and in the click handler:
+  a) Using the previously created Editor, save the EditText and CheckBox values using keys that you have chosen.
+  b) Call the commit() method on the Editor that will trigger the Editor to save the new values to disk.
+  c) Display a Toast confirming that the changes have been saved.
+4) Close the Activity.
+5) Confirm that opening the Activity properly restores the saved values.
+
 
 ## Snippets
 

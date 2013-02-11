@@ -1,10 +1,17 @@
-Build an action bar with 2 icons
-First icon when clicked should print a toast message
-Second icon when clicked should bring up a second activity
-Home icon on second activity when clicked should take you back to first activity
-  Hint: Use "case android.R.id.home" to handle home click
-  Enable setHomeButtonEnabled on ActionBar to enable home button click
-Action Bar should read 'Click an Icon' as the title
+Goal: Build an action bar with 2 icons.
+
+Description:
+Google is encouraging application developers to adopt the action bar, which is a title bar at the top of the screen with buttons. This is meant to be a replacement for the context menu used in early versions of Android.
+
+In this exercise, we will add 2 action buttons. One will simply display a Toast and the other will launch another Activity.
+
+Directions:
+1) Open the menu XML for the default Activity (e.g., res/menu/my_activity.xml). Note that this different than the layout XML.
+2) Add 2 menu items, as shown in the snippet below.
+3) Override the onOptionsItemSelected method in the Activity.
+  a) Add a switch statement for the MenuItem.
+  b) Either create a Toast for launch the next activity.
+
 
 ## Snippets
 

@@ -1,7 +1,13 @@
-Open HelloWorldDemo in Eclipse
-Create a TimePicker control
-Create a Submit button
-Toast the selected time when button is pressed.
+Goal: Explore using a TimePicker view.
+
+Description:
+This is a basic exercise using the TimePicker view.
+
+Directions:
+1) Create an Activity with a TimePicker view.
+2) Add a button. In the click handler,
+  a) Display a toast of the current selected time.
+
 
 ## Snippets
 

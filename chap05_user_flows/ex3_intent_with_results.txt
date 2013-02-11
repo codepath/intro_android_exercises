@@ -1,9 +1,21 @@
-Open HelloWorldDemo in Eclipse
-Create at least one contact within the emulator or device
-Create or open a new activity
-When a button is clicked, have another activity started using startActivityforResult
-In the second activity, have the user enter text and hit a button and return the text as a result
-In the first activity, display the text result as a toast message
+Goal: Use an intent that passes back a result.
+
+Description:
+Sometimes, when launching an activity, it's convenient to give the originating activity some result. An example of this use case is when the launched activity is gathering some information from the user in a form.
+
+Directions:
+1) In a new Activity,
+  a) Add a TextView and a Button.
+  b) In the button click handler, launch another activity using startActivityForResult
+  c) Override onActivityResults
+    i) Set the text of the TextView to the returned data.
+2) In the second Activity,
+  a) Create an EditText and a Button
+  b) In the button click handler,
+    i) Create an intent and add string extra into it.
+    ii) Call setResult(RESUILT_OK, intent)
+    iii) Call finish() to dismiss the current Activity
+
 
 ## Snippets
 

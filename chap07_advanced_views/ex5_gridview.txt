@@ -1,7 +1,17 @@
-Create a GridView to display 6 images
-Select 6 images to move into drawables
-Construct a GridView displaying all images using a custom class
-  extends ArrayAdapter and overrides getView.
+Goal: Create a GridView to display 6 images.
+
+Description:
+Like ListView and Spinner, GridView is an adapter view. In other words, it displays the data that it finds in its attached adapter. In this exercise, we will display 6 images in a grid using a GridView.
+
+Adapters can specify an XML file to display each item. However, to customize the view, one must subclass the ArrayAdapter class and override the getView method.
+
+Directions:
+1) Create a new Activity with a GridView that fills the entire screen.
+2) Download and copy 6 images into the drawables folder. You only need to copy the images into one of the drawables folders.
+3) Create a new class called GridImageAdapter that is a subclass of ArrayAdapter.
+  a) Override the getView method to create a custom view.
+  b) Set the appropriate image based on the index.
+4) In the onCreate method, create a GridImageAdapter and set it to the GridView.
 
 
 ## Snippets

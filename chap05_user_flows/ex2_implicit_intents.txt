@@ -1,7 +1,16 @@
-Open HelloWorldDemo in Eclipse
-In the first activity, setup a TextEdit to specify a url address to visit.
-Create a "Visit" button that when clicked opens up the specified url
-  in a browser using an ACTION_VIEW implicit intent
+Goal: Launch a browser using implicit intents.
+
+Description:
+When launching another activity in the same application, use explicit intents to designate the activity to launch. However, in order to launch other applications, one must use implicit intents which does not specify a specific activity. An implicit intent uses a combination of an action, data, and a category to determine which application to launch. In some cases, more than one application may have an "intent filter" that matches the criteria of the implicit intent.
+
+Although there are many rules to matching implicit intents with intent filters, the most common implicit intents specify and action (e.g., ACTION_VIEW) and data with a URL, like http:// or loc:// or contacts://. Android uses the protocol, e.g., http, to match with the appropriate application, like the browser, maps, calendar, contacts, phone, etc.
+
+Directions:
+1) In a new activity, add an EditText and Button view.
+2) In the button click handler,
+  a) Create a Uri based on the text in the EditText field.
+  b) Create an intent w/ the ACTION_VIEW action and the url data.
+  c) Start an activity with the implicit intent.
 
 
 ## Snippets

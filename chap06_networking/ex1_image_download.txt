@@ -1,8 +1,25 @@
-Open HelloWorldDemo in Eclipse
-Add line allowing UIThread long tasks
-Add an ImageView to an activity
-Find an image online, download it using an InputStream,
-  and update the ImageView.
+Goal: Download an image.
+
+Description:
+When making network requests, there are a couple of requirements: permissions and threading.
+
+Android requires an application to request permissions for certain things, such as accessing the internet, the call log, the contact book, etc. Permissions are requested by listing them in AndroidManifest.xml.
+
+Android is mostly single threaded. This is by design because it is easy to introduce undesirable behavior with multiple threads. However, accessing the network or the disk in the main thread will cause the main thread to be unresponsive to user interaction. Android added a concept called StrictMode that enforces the rule that network requests must never be made on the main thread. In the next lesson, we will learn how to move the network request to a background thread. For now, we will disable the StrictMode rule and download the image in the main thread.
+
+Directions:
+1) Modify AndroidManifest.xml to request the INTERNET permission.
+2) Create a new Activity with an ImageView.
+3) In the onCreate,
+  a) Disable StrictMode for network access.
+  b) Call a method, downloadImageFromUri(String address)
+4) Implement downloadImageFromUri(String address)
+  a) Create the URL from the string.
+  b) Open a URLConnection.
+  c) Get an InputStream from the connection.
+  d) Decode the image using the BitmapFactory.
+  e) Set the bitmap of the ImageView.
+
 
 ## Snippets
 

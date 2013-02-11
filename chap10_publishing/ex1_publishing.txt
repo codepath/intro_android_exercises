@@ -1,20 +1,19 @@
-Open HelloWorldDemo in Eclipse
-Go through the process of signing your application and generating an APK through Eclipse
-(Optionally) Publish an application on the Android Marketplace
+Goal: Generate an APK that can be used to publish to the Android Marketplace.
 
-Publishing requires us to self-sign our application.
-    Eclipse has a signing wizard built-in
-    Select File → Export → Android → Export Android Application
-    Verify project name and click Next
-    Select Create a new Keystore and pick any location and any password.
-    Type "DistributionKeyStoreAlias" as alias, enter 30 years of validity and name. Hit Next
-    Choose an APK file path and hit Finish
+Description:
+Publishing a completed app is fairly easy. It requires first signing the project and generating an APK.
 
-Publishing can be done through several deployment methods.
-    The easiest is to use the Android Market
-    Visit http://market.android.com/publish/Home to register for a Google developer account (costs $25)
-    Enter information and complete the process
-    Click the Upload Application link to start the upload
-    Select APK file and upload screenshots and information
-    Enter app title, description, website, etc
-    Hit Publish to complete the uploading of your app.
+Directions:
+1) Self-sign the application using the signing wizard built-in to Eclipse.
+  a) Select File → Export → Android → Export Android Application
+  b) Verify project name and click Next
+  c) Select Create a new Keystore and pick any location and any password.
+  d) Type "DistributionKeyStoreAlias" as alias, enter 30 years of validity and name. Hit Next
+  e) Choose an APK file path and hit Finish
+2) Publish the app (optional)
+  a) Visit http://market.android.com/publish/Home to register for a Google developer account (costs $25)
+  b) Enter information and complete the process
+  c) Click the Upload Application link to start the upload
+  d) Select APK file and upload screenshots and information
+  e) Enter app title, description, website, etc
+  f) Hit Publish to complete the uploading of your app.
