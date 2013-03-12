@@ -1,0 +1,4 @@
+auto: true
+permalink: /:title
+pygments: true
+base_url: http://thecodepath.github.com/intro_android_exercises

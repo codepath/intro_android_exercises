@@ -1,0 +1,55 @@
+---
+layout: exercises
+title: Chapter 8
+---
+
+## Chapter 8 - Preferences
+
+### Exercise 1: Persist Settings
+
+**Goal**: Persist settings across application launches.
+
+**Description**:
+
+There are a variety of ways to save data, and one of the simplest ways is to leverage the built-in SharedPreferences class. SharedPreferences is simply a HashMap that saves its keys and values to disk automatically.
+
+In this exercise, we will add some values to the SharedPreferences class and retrieve them later.
+
+**Directions**:
+
+1. In a new Activity, create an EditText and CheckBox.
+2. In the onCreate method, retrieve the saved values for previous EditText and CheckBox views and configure the current EditText and CheckBox views.
+   - Get the SharedPreferences using getSharedPreferences()
+   - Store the SharedPreferences Editor to be used later.
+   - Retrieve the saved values for EditText and CheckBox from the SharedPreferences using keys that you have chosen.
+3. Add a button, and in the click handler:
+   - Using the previously created Editor, save the EditText and CheckBox values using keys that you have chosen.
+   - Call the commit() method on the Editor that will trigger the Editor to save the new values to disk.
+   - Display a Toast confirming that the changes have been saved.
+4. Close the Activity.
+5. Confirm that opening the Activity properly restores the saved values.
+
+
+#### Snippets
+
+    // In Java Activity
+    SharedPreferences prefs;
+    Editor edits;
+    TextView txtPersist;
+    CheckBox chkPersist;
+
+    public void populateValues() {
+      prefs = getSharedPreferences("view", 0.;
+      edits = prefs.edit();
+      String persistedText = prefs.getString("txtVal", "None Stored Yet");
+      boolean isChecked = prefs.getBoolean("chkState", false);
+      txtPersist.setText(persistedText);
+      chkPersist.setChecked(isChecked);
+    }
+
+    public void persistValues(View v) {
+      edits.putString("txtVal", txtPersist.getText().toString());
+      edits.putBoolean("chkState", chkPersist.isChecked());
+      edits.commit();
+      Toast.makeText(this, "Persisted!", Toast.LENGTH_SHORT).show();
+    }

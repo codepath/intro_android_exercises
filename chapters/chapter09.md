@@ -1,0 +1,74 @@
+---
+layout: exercises
+title: Chapter 9
+---
+
+## Chapter 9 - Content Providers
+
+### Exercise 1: Contact List
+
+**Goal**: To access the contact list on the phone.
+
+**Description**:
+
+Content providers are used when data needs to be shared between applications. Data in a content provider is represented as a collection of simple tables. In this exercise, we will access the contact list via the Contacts content provider. In order to do this, we must request the READ_CONTACTS permission in AndroidManifest.xml.
+
+**Directions**:
+
+1. Use the Contacts app in the emulator to add several contacts for debugging.
+2. Modify AndroidManifest.xml to request the READ_CONTACTS permission.
+3. Create an Activity with a full screen ListView.
+4. Create an instance variable of type ArrayList to store the contact names.
+5. Initialize the contacts
+   - Get a cursor to the contacts table.
+   - Iterate through the cursor, setting names into the ArrayList.
+6. Create an ArrayAdapter with the contact names ArrayList.
+7. Add an OnItemClickListener and display the selected contact in a Toast.
+
+
+#### Snippets
+
+    // Manifest
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    // Activity
+    private void populateListView() {
+      ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        android.R.layout.simple_list_item_1, names);
+
+      ListView listView = (ListView) findViewById(R.id.lvContacts);
+      listView.setAdapter(adapter);
+      listView.setOnItemClickListener(new OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+          Toast.makeText(ContactListActivity.this, names.get(position), Toast.LENGTH_SHORT).show();
+        }
+      });
+    }
+
+    @SuppressLint("NewApi")
+    private void loadContacts() {
+      Uri allContacts = Uri.parse("content://contacts/people");
+      CursorLoader cursorLoader = new CursorLoader(this, allContacts,
+         null, // the columns to retrive
+         null, // the selection criteria
+         null, // the selection args
+         null // the sort order
+      );
+
+      Cursor c = cursorLoader.loadInBackground();
+      if (c.moveToFirst()) {
+        do {
+             // Get Contact ID
+          int idIndex = c.getColumnIndex(ContactsContract.Contacts._ID);
+          String contactID = c.getString(idIndex);
+
+          // Get Contact Name
+          int nameIndex = c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME);
+          String contactDisplayName = c.getString(nameIndex);
+          names.add(contactDisplayName);
+
+          Log.d("debug", contactID + ", " + contactDisplayName);
+        } while (c.moveToNext());
+      }
+    }
