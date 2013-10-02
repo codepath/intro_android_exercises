@@ -19,6 +19,7 @@ Directions:
   f) android:layout_centerVertical="false"
 3) Add a unique id to the TextView
   a) android:id = "@+id/main_text_view"
+  b) save the XML file to commit the ID changes
 4) In the activity's Java file
   a) Get a handle to the TextView, as shown in the snippet below
   b) Hover your mouse over TextView and Toast and click the option to automatically import packages.
@@ -29,6 +30,6 @@ Directions:
 // Java code in Activity
 protected void onCreate(Bundle savedInstanceState) {
   // ...
-  TextView tvMain = (TextView) findViewById(R.id.tvMain);
+  TextView tvMain = (TextView) findViewById(R.id.main_text_view);
   Toast.makeText(this, tvMain.getText().toString(), Toast.LENGTH_SHORT).show();
 }
