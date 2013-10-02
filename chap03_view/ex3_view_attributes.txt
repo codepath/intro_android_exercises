@@ -29,6 +29,6 @@ Directions:
 // Java code in Activity
 protected void onCreate(Bundle savedInstanceState) {
   // ...
-  TextView tvMain = (TextView) findViewById(R.id.tvMain);
+  TextView tvMain = (TextView) findViewById(R.id.main_text_view);
   Toast.makeText(this, tvMain.getText().toString(), Toast.LENGTH_SHORT).show();
 }
