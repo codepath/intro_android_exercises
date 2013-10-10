@@ -25,7 +25,7 @@ Button btnLaunchSecond = (Button) findViewById(R.id.btnLaunchSecond);
 btnLaunchSecond.setOnClickListener(new OnClickListener() {
   @Override
   public void onClick(View v) {
-    Intent i = new Intent(this, SimpleBundleDemoActivity.class);
+    Intent i = new Intent(getBaseContext(), SimpleBundleDemoActivity.class);
     i.putExtra("text", "Passed String Extra!");
     startActivity(i);
   }
