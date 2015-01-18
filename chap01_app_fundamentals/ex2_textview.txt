@@ -8,7 +8,7 @@ Every element has XML properties that describes various behavior such as layout,
 Directions:
 
 1) Open the XML layout file (e.g., res/layout/activity_hello_world.xml)
-2) Switch to the raw XML mode.
+2) Switch to the text mode.
 3) If there is not already a TextView in the layout, add one.
 4) Modify the android:text property, as shown below.
 
