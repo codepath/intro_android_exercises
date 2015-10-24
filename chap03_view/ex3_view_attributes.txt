@@ -1,7 +1,7 @@
 Goal: Explore view attributes and getting a handle to the view from Java.
 
 Description:
-Views have many different properties to configure their appearance and behavior. In this exercise, we will experiment will a few basic properties, such as setting the background color and playing with margin and padding.
+Views have many different properties to configure their appearance and behavior. In this exercise, we will experiment with a few basic properties, such as setting the background color and playing with margin and padding.
 
 XML is used to describe the static aspects of an Activity. However, we will often need to manipulate or access the views in Java as well. For example, if the user enters some input in an EditText view, we need to be able to access that EditText to find out what they entered.
 
